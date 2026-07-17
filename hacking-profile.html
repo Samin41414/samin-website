@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Core // Pranto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #020208;
+            color: #33ff33;
+            font-family: 'Share Tech Mono', monospace;
+            min-height: 100vh;
+            padding: 30px;
+            overflow-x: hidden;
+        }
+
+        #terminal-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 9999;
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .hacking-interface {
+            display: none;
+            max-width: 950px;
+            margin: 0 auto;
+            border: 1px solid #33ff33;
+            background: rgba(5, 20, 5, 0.9);
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.2);
+            padding: 30px;
+        }
+
+        .terminal-header {
+            border-bottom: 1px solid #33ff33;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .skill-box {
+            border: 1px dashed #33ff33;
+            padding: 20px;
+            background: rgba(0, 40, 0, 0.2);
+        }
+
+        .skill-box p {
+            font-size: 14px;
+            color: #88ff88;
+            line-height: 1.5;
+            margin-top: 5px;
+            padding-left: 18px;
+        }
+
+        .target-list {
+            list-style: none;
+        }
+
+        .target-list li {
+            font-weight: bold;
+        }
+
+        .action-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn-abort, .btn-whoami {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid #33ff33;
+            background: transparent;
+            color: #33ff33;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .btn-abort:hover {
+            background: #ff3333;
+            color: #000;
+            border-color: #ff3333;
+            box-shadow: 0 0 15px #ff3333;
+        }
+
+        .btn-whoami {
+            color: #00f0ff;
+            border-color: #00f0ff;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0, 240, 255, 0.2);
+        }
+
+        .btn-whoami:hover {
+            background: #00f0ff;
+            color: #000;
+            box-shadow: 0 0 15px #00f0ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="terminal-loader">
+        <div id="log"></div>
+    </div>
+
+    <div class="hacking-interface" id="main-content">
+        <div class="terminal-header">
+            <div>[ STATUS: ROOT_ACCESS_GRANTED ]</div>
+            <div>OPERATOR: PRANTO // SEC_CORE</div>
+        </div>
+
+        <h1 style="font-size: 28px; margin-bottom: 10px;">CYBER_SECURITY & ETHICAL_HACKING</h1>
+        <p style="margin-bottom: 30px; color: #88ff88;">> Sub-network unlocked. Core security architectures compiled successfully.</p>
+
+        <div class="grid">
+            
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Linux Security Environment</li>
+                </ul>
+                <p>Working with Linux-based tools and command-line security workflows.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Network Security Fundamentals</li>
+                </ul>
+                <p>Understanding IP, DNS, ports, protocols, and network troubleshooting.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] OSINT (Open Source Intelligence)</li>
+                </ul>
+                <p>Gathering and analyzing publicly available information using security tools.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Web Security Basics</li>
+                </ul>
+                <p>Understanding common web vulnerabilities, HTTP requests, and security testing concepts.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Security Testing in Lab Environment</li>
+                </ul>
+                <p>Practicing ethical security assessments on authorized systems and personal labs.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Vulnerability Assessment</li>
+                </ul>
+                <p>Identifying security weaknesses and learning mitigation techniques.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Python & Bash Security Automation</li>
+                </ul>
+                <p>Creating scripts for automation, analysis, and security-related tasks.</p>
+            </div>
+
+            <div class="skill-box">
+                <ul class="target-list">
+                    <li>[✓] Termux Security Toolkit</li>
+                </ul>
+                <p>Using Android-based Linux environment for learning cybersecurity tools and workflows.</p>
+            </div>
+
+        </div>
+
+        <!-- বাটনের নতুন কন্টেইনার -->
+        <div class="action-container">
+            <a href="profile.html" class="btn-abort">< DISCONNECT_SESSION</a>
+            <a href="whoami.html" class="btn-whoami">[ WHO ARE YOU! ]</a>
+        </div>
+    </div>
+
+    <script>
+        const logContainer = document.getElementById('log');
+        const loader = document.getElementById('terminal-loader');
+        const mainContent = document.getElementById('main-content');
+
+        const logs = [
+            "CONNECTING TO PRANTO_MAIN_SERVER...",
+            "BYPASSING FIREWALL... SUCCESS",
+            "INJECTING EXPLOIT ALLOCATOR...",
+            "LOADING CORE MODULES: [CYBER_SECURITY_SKILLS]",
+            "DECRYPTING SECURITY DATA PACKETS...",
+            "EXTRACTING RECON & AUTOMATION LABS...",
+            "ACCESS GRANTED. OPENING SECURE CORE INTERFACE..."
+        ];
+
+        let i = 0;
+        function typeLog() {
+            if (i < logs.length) {
+                logContainer.innerHTML += "> " + logs[i] + "<br>";
+                i++;
+                setTimeout(typeLog, 350); 
+            } else {
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    mainContent.style.display = 'block';
+                }, 400);
+            }
+        }
+
+        window.onload = typeLog;
+    </script>
+</body>
+</html>

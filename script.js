@@ -1,6 +1,1 @@
-alert("Welcome to my website!");
-function hello(){
-
-alert("Thanks for visiting my website ❤️");
-
-}
+console.log("Samin Salam Pranto Website Loaded");
